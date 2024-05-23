@@ -37,6 +37,8 @@ app.get('/app', (req, res) => {
 
 // Create HTTPS server
 const httpsServer = https.createServer(credentials, app);
+// Set the keep-alive timeout to 300 seconds (300000 milliseconds)
+httpsServer.keepAliveTimeout = 300000;
 
 httpsServer.listen(PORT, () => {
   console.log(`HTTPS Server running on port ${PORT}`);
