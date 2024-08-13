@@ -12,7 +12,7 @@ const certificate = fs.readFileSync('/etc/fullchain.pem', 'utf8');
 const credentials = { key: privateKey, cert: certificate };
 
 // Define the route
-app.get('/app', (req, res) => {
+app.get('/get', (req, res) => {
   const topic = req.query.topic;
 
   if (!topic) {
@@ -20,7 +20,7 @@ app.get('/app', (req, res) => {
 );
   }
 
-  const filePath = path.join('/tmp/db', `test.${topic}`);
+  const filePath = path.join('/tmp/db', `${topic}`);
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
