@@ -58,8 +58,8 @@ const startServer = async () => {
   useServer({ schema }, wsServer);
 
   // Start the HTTPS server
-  server.listen(8445, () => {
-    console.log(`🚀 Server ready at https://localhost:8445${apolloServer.graphqlPath}`);
+  server.listen(8444, () => {
+    console.log(`🚀 Server ready at https://localhost:8444${apolloServer.graphqlPath}`);
   });
 
   // Simulate message publishing
