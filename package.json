@@ -14,7 +14,8 @@
     "graphql": "^15.5.1",
     "graphql-ws": "^5.11.0",
     "nats": "^2.9.2",
-    "ws": "^8.8.1"
+    "ws": "^8.8.1",
+    "graphql-subscriptions": "^1.2.1"
   },
   "devDependencies": {},
   "author": "Your Name",
