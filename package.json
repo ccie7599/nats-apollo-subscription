@@ -1,15 +1,22 @@
 {
-  "name": "https-server",
+  "name": "apollo-nats-pubsub-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "GraphQL Apollo Server with NATS PubSub and WebSocket subscriptions over HTTPS",
+  "main": "subscription-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node subscription-server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "apollo-server-express": "^3.11.0",
+    "@graphql-tools/schema": "^8.3.12",
+    "express": "^4.18.2",
+    "fs": "0.0.1-security",
+    "graphql": "^15.5.1",
+    "graphql-ws": "^5.11.0",
+    "nats": "^2.9.2",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "ISC"
 }
